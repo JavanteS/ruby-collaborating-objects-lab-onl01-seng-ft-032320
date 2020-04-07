@@ -27,7 +27,7 @@ class Artist
  
   
   def self.find_or_create_by_name(name)
-    self.all.find do |singer| if singer.name == name 
+    self.all.find do |singer| if self.name(singer) == name 
     return singer
   else
       Artist.new(name)
