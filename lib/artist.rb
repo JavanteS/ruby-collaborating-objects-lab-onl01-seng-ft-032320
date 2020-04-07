@@ -27,8 +27,8 @@ class Artist
  
   
   def self.find_or_create_by_name(name)
-    if Artist.name 
-    return Artist
+    if @all.find(name) == name
+    return name
     else Artist.new(name) 
     end
    end
