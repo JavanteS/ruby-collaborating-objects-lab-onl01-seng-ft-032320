@@ -26,7 +26,7 @@ class Song
    song.artist_name = singer
    
    
-   song.artist = song.artist_name
+  
    song
   end
   
