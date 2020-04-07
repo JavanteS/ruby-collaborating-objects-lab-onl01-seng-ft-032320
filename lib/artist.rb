@@ -28,7 +28,8 @@ class Artist
  
   #["Beyonce","Whitney","Troop"]
   def self.find_or_create_by_name(name)
-   #.pry
+   
+   artist = self.all.find
     self.all.find do |singer| 
       
       if singer.name == name
