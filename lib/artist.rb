@@ -31,11 +31,11 @@ class Artist
     self.all.find do |singer| 
       binding.pry
       if singer.name == name
-    return singer
-  else
-      Artist.new(name)
-  end
-  end
+       return singer
+      else
+         Artist.new(name)
+      end
+    end
  end
   
   
