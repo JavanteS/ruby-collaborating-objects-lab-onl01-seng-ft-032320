@@ -34,7 +34,7 @@ class Artist
       
        singer.name == name
     end
-    
+    binding.pry
  end
   
   
