@@ -34,7 +34,11 @@ class Artist
       
        singer.name == name
     end
-    binding.pry
+    if artist == nil
+      Artist.new(name)
+    else
+      artist
+    end
  end
   
   
