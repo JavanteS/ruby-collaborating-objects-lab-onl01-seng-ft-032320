@@ -31,9 +31,10 @@ class Artist
    
    
     self.all.find do |singer| 
-      binding.pry
+      
        singer.name == name
     end
+    
  end
   
   
