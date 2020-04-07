@@ -27,10 +27,7 @@ class Artist
  
   
   def self.find_or_create_by_name(name)
-     @all.find do |singer|  singer.name == name
-    return singer
-   
-   end
+    if @all.find(name) == name
  end
   
   
