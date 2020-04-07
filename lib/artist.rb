@@ -28,7 +28,7 @@ class Artist
  
   #["Beyonce","Whitney","Troop"]
   def self.find_or_create_by_name(name)
-   binding.pry
+   #.pry
     self.all.find do |singer| 
       
       if singer.name == name
