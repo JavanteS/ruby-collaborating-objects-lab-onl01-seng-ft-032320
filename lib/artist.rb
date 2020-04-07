@@ -28,6 +28,7 @@ class Artist
   
   def self.find_or_create_by_name(name)
    if self.name == name
+     
    else 
      @@all << Artist.new(name)
      Artist.new(name)
