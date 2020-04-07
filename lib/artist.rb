@@ -8,6 +8,8 @@ class Artist
    
   end
   
+  
+  
   def add_song(song)
     @songs << song
   end
@@ -22,9 +24,7 @@ class Artist
 
   end
   
-  def self.all
-    @@all 
-  end
+ 
   
   def self.find_or_create_by_name(name)
     @@all.select do |singer| if singer.name == name 
