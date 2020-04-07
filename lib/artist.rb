@@ -33,7 +33,7 @@ class Artist
     
      
    else 
-    return  Artist.new(name)
+    return  self.new(name)
    end
    end
    end
