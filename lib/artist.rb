@@ -31,6 +31,7 @@ class Artist
     return singer
   else singer.name = self.new(singer)
   end
+  end
  end
   
   
