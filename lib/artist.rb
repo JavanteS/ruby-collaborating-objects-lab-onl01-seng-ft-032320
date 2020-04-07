@@ -1,3 +1,4 @@
+require "pry"
 class Artist
   attr_accessor :name, :songs
   
@@ -27,7 +28,9 @@ class Artist
  
   
   def self.find_or_create_by_name(name)
-    self.all.find do |singer| if self.name(singer) == singer 
+    self.all.find do |singer| 
+      binding.pry
+      if self.name(singer) == singer 
     return singer
   else
       Artist.new(name)
