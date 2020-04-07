@@ -30,7 +30,7 @@ class Artist
     self.all.find do |singer| if self.name(singer) == singer 
     return singer
   else
-      Artist.new(singer)
+      Artist.new(name)
   end
   end
  end
