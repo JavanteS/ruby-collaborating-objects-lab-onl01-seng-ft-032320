@@ -26,11 +26,11 @@ class Artist
   end
   
  
-  
+  #["Beyonce","Whitney","Troop"]
   def self.find_or_create_by_name(name)
     self.all.find do |singer| 
       binding.pry
-      if self.name(singer) == singer 
+      if singer.name == name
     return singer
   else
       Artist.new(name)
